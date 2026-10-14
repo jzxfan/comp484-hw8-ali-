@@ -1,0 +1,138 @@
+/* Color Palette
+#1B4332 - dark green (header & footer background, body text)
+#B7E4C7 - medium green (education background)
+#D8F3DC - light green (work experience background)
+#F8F9FA - off white (page background, header & footer text)
+*/
+
+/* Global styles
+------------------------------------*/
+/* Box model fix */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #F8F9FA;
+    color: #1B4332;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 0;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+
+/* Navigation
+------------------------------------*/
+nav {
+    position: sticky;
+    top: 0;
+    background: #1B4332;
+    text-align: center;
+    padding: 10px;
+}
+
+nav a {
+    color: #F8F9FA;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+
+/* Header & Footer
+------------------------------------*/
+header, footer {
+    background: #1B4332;
+    color: #F8F9FA;
+}
+
+header {
+    background: linear-gradient(rgba(27, 67, 50, 0.9), rgba(27, 67, 50, 0.5)), url("../images/server-rack.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+header h1, header h2 {
+    margin: 0;
+}
+
+header h2 {
+    font-weight: 400;
+}
+
+.profile-img {
+    /* width: 300px; */
+    /* float: left; */
+    /* margin-right: 30px; */
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: #D8F3DC;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+    background: #D8F3DC;
+}
+
+
+/* Education
+------------------------------------*/
+.education {
+    background: #B7E4C7;
+}
